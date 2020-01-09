@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device,initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" type='text/css' href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet"  type='text/css' href="{% static 'css/style.css' %}">
+        <title>www.menu.com</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- nav section -->
+        <section class="navbar-nav navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-11">
+                        <a class="navbar-brand" href="#">Orisys Academy</a>
+
+                    </div>
+                    <div class="col-1 align-items-right">
+                        <button class="btn btn-outline-secondary my-2" type="submit">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- main section -->
+        <section class="">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class="batch-box"></h2>
+                    <div class="col-2 border align-items-right">
+                        <div class="mt-3 main_margin">
+                            <ul class="list-group">
+
+                                <li class="list-group-item"><a href="{%url 'studentdetails' %}?id={{ student.id }}">My Profile</a></li>
+                                <li class="list-group-item"><a href="">Attendance</a></li>
+                                <li class="list-group-item"><a href="#">Assessment Mark</a></li>
+                                <li class="list-group-item"><a href="#">Notifications</a></li>
+                                <li class="list-group-item"><a href="#">Feedback</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-10">
+
+<form class="batchform form-horizontal ">
+
+
+    <table class="table  table-triped">
+      <thead>
+
+      <tr>
+          <th>NOTIFICATIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+
+
+        <td> <div class="boxe">
+                    <h5> <a href=""></a>ASSIGNMENTS</h5>
+                  </div></td>
+        <td><div class="boxe">
+                    <h5> <a href=""></a>ANNOUNCEMENTS</h5>
+                  </div></td>
+        <td><div class="boxe">
+                    <h5> <a href="">EXAMS</a></h5>
+                  </div></td>
+        </tr>
+
+
+   </tbody>
+    </table>
+</form>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section -->
+        <section class="navbar-nav navbar-dark bg-dark">
+            <footer class="page-footer font-small pt-3">
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </section>
+
+    </body>
+</html>
